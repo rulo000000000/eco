@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Editable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-picture-container">
+                <img src="https://via.placeholder.com/150" alt="Foto de perfil" id="profile-picture" class="profile-picture">
+                <label for="file-input" class="change-picture-button">
+                    <i>📷</i> <!-- Icono decorativo -->
+                </label>
+                <input type="file" id="file-input" accept="image/*" hidden>
+            </div>
+            <h1 id="name-display">Nombre del Usuario</h1>
+            <p id="email-display">usuario@example.com</p>
+        </div>
+        <div class="profile-body">
+            <h2>Detalles</h2>
+            <form id="edit-profile">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" value="Nombre del Usuario">
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" value="usuario@example.com">
+                
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" value="+123 456 7890">
+                
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" value="Calle Falsa 123">
+                
+                <label for="occupation">Ocupación:</label>
+                <input type="text" id="occupation" value="Estudiante de Ingeniería">
+                
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
